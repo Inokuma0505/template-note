@@ -2,13 +2,10 @@
 
 ## Build Environment
 
-1. install [rye](https://rye-up.com/)
-   1. install instructions: https://rye-up.com/guide/installation/
-2. enable [uv](https://github.com/astral-sh/uv) to speed up dependency resolution.
+1. install [uv](https://docs.astral.sh/uv/)
+   1. install instructions: https://docs.astral.sh/uv/getting-started/installation/
+2. create a virtual environment
    ```bash
-   rye config --set-bool behavior.use-uv=true
+   uv sync
    ```
-3. create a virtual environment
-   ```bash
-   rye sync
-   ```
+   If Python 3.13 is not installed, uv downloads it automatically.
